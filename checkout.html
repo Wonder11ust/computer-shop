@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jojo Computer Shop - Checkout</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Jojo Computer Shop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Category </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">RAM</a></li>
+                <li><a class="dropdown-item" href="#">VGA</a></li>
+                <li><a class="dropdown-item" href="#">SSD</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html"><i class="fa fa-cart-shopping"></i><span class="badge text-bg-secondary">4</span></a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-header">Formulir Alamat Pengiriman</div>
+            <div class="card-body">
+              <form action="checkout-success.html">
+                <div class="form-group">
+                  <label for="">Nama</label>
+                  <input type="text" class="form-control" name="name" placeholder="Masukkan Nama penerima" required />
+                  <!-- <small class="form-text text-danger">Nama harus diisi!</small> -->
+                </div>
+                <div class="form-group">
+                  <label for="">Alamat</label>
+                  <textarea class="form-control" name="address" id="" cols="30" rows="5" required></textarea>
+                  <!-- <small class="form-text text-danger">Alamat harus diisi!</small> -->
+                </div>
+                <div class="form-group">
+                  <label for="">Telepon</label>
+                  <input type="text" class="form-control" name="phone" placeholder="Masukkan nomor telepon penerima" required />
+                  <!-- <small class="form-text text-danger">Nomor harus diisi!</small> -->
+                </div>
+
+                <button class="btn btn-primary" type="submit">Simpan</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card mb-3">
+                <div class="card-header">Cart</div>
+                <div class="card-body">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Produk</th>
+                        <th>Qty</th>
+                        <th>Harga</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>RAM Corsair Vengeance</td>
+                        <td>1</td>
+                        <td>Rp1.000.000</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Subtotal</td>
+                        <td>Rp1.000.0000</td>
+                      </tr>
+                      <tr>
+                        <td>Processor Intel i9 Extreme</td>
+                        <td>1</td>
+                        <td>Rp10.000.000</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Subtotal</td>
+                        <td>Rp10.000.0000</td>
+                      </tr>
+                      <tr>
+                        <td>Keyboard Gaming</td>
+                        <td>1</td>
+                        <td>Rp800.000</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Subtotal</td>
+                        <td>Rp800.000</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <th colspan="2">Total</th>
+                        <th>Rp11.800.000</th>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electronic Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      .background-header {
+        background-image: url(img/pc_gaming.jpg);
+        background-color: #fafbfc;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      .text-green {
+        color: #0b9b6b;
+      }
+      .cover {
+        background: no-repeat center/cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Jojo Computer Shop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Category </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">RAM</a></li>
+                <li><a class="dropdown-item" href="#">VGA</a></li>
+                <li><a class="dropdown-item" href="#">SSD</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html"><i class="fa fa-cart-shopping"></i><span class="badge text-bg-secondary">4</span></a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- header start -->
+    <div class="container mt-3 background-header">
+      <div class="mt-4 p-5 text-white text-center rounded">
+        <h1 class="display-3">Solusi Terbaik Rakit Komputermu</h1>
+        <p class="lead" style="font-weight: bold">Kami menyediakan banyak komponen PC yang kamu butuhkan dari low-end sampai high-end</p>
+        <a href="" class="btn btn-dark">Lebih Lanjut</a>
+      </div>
+    </div>
+    <!-- header end -->
+    <!-- service start-->
+    <section id="services" class="container-fluid">
+      <div class="row text-center">
+        <div class="col-12 pb-4"><h2 class="display-4 text-center mb-5" style="margin-top: 4rem !important">Mengapa memilih kami?</h2></div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x"> <i class="fas fa-circle fa-stack-2x text-green"></i> <i class="fas fa-list fa-stack-1x text-white"></i></span>
+
+          <h3 class="mt-4 text-green">Komponen Lengkap</h3>
+          <p>Komponen yang kami sediakan sangat lengkap dan bagus.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x"> <i class="fas fa-circle fa-stack-2x text-green"></i> <i class="fas fa-screwdriver-wrench fa-stack-1x text-white"></i></span>
+          <h3 class="mt-4 text-green">Service Lengkap</h3>
+          <p>Mulai dari rakit PC sampai servis PC kami bisa</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x"> <i class="fas fa-circle fa-stack-2x text-green"></i> <i class="fas fa-money-bill fa-stack-1x text-white"></i></span>
+          <h3 class="mt-4 text-green">Biaya Terjangkau</h3>
+          <p>Biaya sangat terjangkau.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x"> <i class="fas fa-circle fa-stack-2x text-green"></i> <i class="fas fa-shield fa-stack-1x text-white"></i></span>
+          <h3 class="mt-4 text-green">Garansi</h3>
+          <p>Kami menyediakan Garansi 6 Bulan - 1 Tahun apabila terdapat produk cacat.</p>
+        </div>
+        <div class="col-12 pt-3 mb-5">
+          <a href="#" class="btn text-white bg-red btn-lg" target="_blank" role="button">Service Lainnya</a>
+        </div>
+      </div>
+    </section>
+    <!-- service end-->
+    <!-- product start -->
+    <section id="product" class="container">
+      <div class="row text-center">
+        <div class="col-12 pb-4">
+          <h2 class="display-4 text-center mb-5" style="margin-top: 4rem !important">Produk Kami</h2>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="img/ram1.jpg" style="max-height: 400px" class="card-img-top" />
+            <div class="card-body" style="min-height: 250px">
+              <h4 class="card-title">RAM Corsair Vengeance 8GB</h4>
+              <p class="card-text">Cocok untuk desain grafis dan gaming rata kanan</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn button-sekunder">Detail & Harga</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="img/procie.jpg" style="max-height: 400px" class="card-img-top" />
+            <div class="card-body" style="min-height: 250px">
+              <h4 class="card-title">Processor Intel I9 Extreme</h4>
+              <p class="card-text">Bukan untuk kaum mendang mending,prosesor untuk PC High-End</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn button-sekunder">Detail & Harga</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="img/vga.jpg" style="max-height: 400px" class="card-img-top" />
+            <div class="card-body" style="min-height: 250px">
+              <h4 class="card-title">VGA RTX 4090</h4>
+              <p class="card-text">Harga terjangaku(untuk sultan),untuk keperluan gaming tidak diragukan lagi</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn button-sekunder">Detail & Harga</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- product end -->
+    <!-- About Us Start -->
+    <section id="about" class="bg-light">
+      <div class="container">
+        <h2 class="display-4 text-center mb-5" style="margin-top:10rem !important ;">Tentang Kami</h2>
+        <div class="row no-gutters">
+          <div class="col-12 col-md-6">
+            <div style="padding: 15px;">
+              <h3 class="display-5 text-center text-green mt-3 mb-3">Perjalanan Bisnis Kami</h3>
+              <p style="text-align: justify;">
+             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem unde, cupiditate earum error corrupti consectetur, explicabo corporis nulla distinctio obcaecati atque repellat quidem, veniam sit quisquam! Omnis, ut nobis enim rem ipsa fugiat natus molestias minima impedit nemo blanditiis voluptates iusto dolorum hic quam quas eos, sapiente et. Eius sint tenetur optio sed adipisci sequi magnam laborum, libero, numquam molestias iure delectus. Error fugit saepe officiis facilis illo molestiae corporis eum exercitationem possimus tenetur cumque distinctio repellat dolores nobis vero molestias ipsam, asperiores ducimus accusantium repellendus enim? Nulla minima similique harum non, sunt illum maiores ea vitae eligendi. Repellendus, enim.
+
+              </p>
+              <div class="col-12 pt-3 text-center">
+                <a href="#" class="btn bg-red btn-lg text-white">Lihat selengkapnya</a>
+              </div>
+            </div>
+            
+            
+          </div>
+          <div class="col-12 col-md-6">
+            <!--vh 100 merupakan class bawaan bootstrap yang menampilkan gambar 100%-->
+            <div class="vh-100 cover" style="background-image: url('img/designecologist-Pmh0UoG1vlE-unsplash.jpg')"></div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class=" vh-100 cover" style="background-image: url('img/annie-spratt-QckxruozjRg-unsplash.jpg');"></div>
+         </div>
+            <div class="col-12 col-md-6">  <div style="padding: 15px;">
+              <h3 class="display-5 text-center text-green mt-3 mb-3">Tim Kami</h3>
+              <p style="text-align: justify;">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit optio aliquam impedit accusantium iusto mollitia illum dolore! Blanditiis quidem consectetur ullam, illum voluptates amet voluptatem, eos dolores facere quaerat culpa saepe reprehenderit voluptate placeat. Amet inventore laudantium quidem nulla architecto eos, rerum neque eveniet perferendis eaque officia voluptatum dolorem. Officia quibusdam velit beatae dicta. Architecto illum est fugit quasi adipisci nam odio. Voluptates, facere tenetur. Nisi laboriosam aperiam exercitationem voluptatem? Quas placeat distinctio consectetur, enim labore reprehenderit hic voluptatibus dolores dolorem aut incidunt ducimus eveniet itaque dolorum molestiae vero nesciunt deserunt dicta a in dolor saepe quasi et! Porro, saepe.
+
+              </p>
+              <div class="col-12 pt-3 text-center">
+                <a href="#" class="btn bg-red btn-lg text-white">Lihat Tim Kami</a>
+              </div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Us End -->
+    <!-- footer start -->
+    <footer id="contact" class="text-center text-lg-start bg-light text-muted">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4"><i class="fas fa-gem me-3"></i>Jojo Computer Shop</h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti alias rem tenetur atque ipsa perspiciatis doloribus voluptatem reprehenderit quis magnam. Voluptatem molestias excepturi quo ab. Deserunt, ipsa nam assumenda
+                reiciendis vitae ab inventore quia facilis voluptate debitis atque voluptatum aliquid itaque ex soluta iusto obcaecati blanditiis incidunt, dignissimos ducimus sed.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+              <p>
+                <a href="#!" class="text-reset">RAM</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">SSD</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">VGA</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Processor</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> Salatiga,Indonesia</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                jojo@gmail.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 62 234 567 88</p>
+              <p><i class="fas fa-print me-3"></i> + 62 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">JojoComputer.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- footer end -->
+  </body>
+</html>
